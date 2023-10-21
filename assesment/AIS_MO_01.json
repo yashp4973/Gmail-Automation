@@ -1,7 +1,7 @@
 {
 "instruction_set":[
   {
-    "description": "TestCase00: Dummy Test Case",
+    "description": "TestCase0: Dummy Test Case",
     "validations": [
       {
         "object_notation": "COMMAND",
