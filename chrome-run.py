@@ -3,9 +3,6 @@ import os
 import sys
 
 def open_chrome_with_user_data():
-   # Define the user data directory
-   user_data_dir = os.path.join(os.getcwd(), 'data')
-
    # Check the operating system
    if os.name == 'nt': # Windows
        # Paths for Chrome in regular and x86 (32-bit) directories
