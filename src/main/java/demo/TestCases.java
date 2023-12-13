@@ -26,6 +26,9 @@ public class TestCases {
         logs.enable(LogType.DRIVER, Level.ALL);
         options.setCapability("goog:loggingPrefs", logs);
 
+        // Connect to the chrome-window running on debugging port
+        options.setExperimentalOption("debuggerAddress", "127.0.0.1:9222");
+
         // Set path for log file
         System.setProperty(ChromeDriverService.CHROME_DRIVER_LOG_PROPERTY, "chromedriver.log");
 
@@ -33,8 +36,6 @@ public class TestCases {
 
         // Set browser to maximize and wait
         driver.manage().window().maximize();
-        driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
-
     }
 
     public void endTest()
