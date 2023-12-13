@@ -22,7 +22,7 @@ public class TestCases {
         LoggingPreferences logs = new LoggingPreferences();
 
         // Set log level and type
-        logs.enable(LogType.BROWSER, Level.ALL);
+        logs.enable(LogType.BROWSER, Level.INFO);
         logs.enable(LogType.DRIVER, Level.ALL);
         options.setCapability("goog:loggingPrefs", logs);
 
