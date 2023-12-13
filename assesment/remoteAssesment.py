@@ -1,3 +1,4 @@
+
 from logging import exception
 import requests
 import json
@@ -54,7 +55,7 @@ def construct_log_json(log_text):
     return LOG
 
 def extract_latest_chromeDriverLogs():
-    with open('chromedriver.log', 'r', errors='ignore') as file:
+    with open('chromedriver.log', 'r') as file:
         log_text = file.read()
     return construct_log_json(log_text)
 
